@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop com Imagens</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <h1>Interlink Game</h1>
+    <p>Arraste os itens para as zonas corretas!</p>
+
+    <div class="items-container">
+        <!-- Imagens arrastáveis -->
+        <img id="Plasmídeo" class="draggable" src="/images/SalmonellaNIAID.png" alt="Plasmídeo" draggable="true" ondragstart="drag(event)">
+        <img id="Glicina" class="draggable" src="/images/images.png" alt="Glicina" draggable="true" ondragstart="drag(event)">
+    </div>
+
+    <div class="dropzones-container">
+        <!-- Zonas de drop -->
+        <div id="nome-Plasmídeo" class="dropzone" ondragover="allowDrop(event)" ondrop="drop(event)">
+            Arraste o Plasmídeo aqui
+        </div>
+        <div id="nome-Glicina" class="dropzone" ondragover="allowDrop(event)" ondrop="drop(event)">
+            Arraste a Glicina aqui
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
